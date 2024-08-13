@@ -1,0 +1,4 @@
+ "https://api.edamam.com/search?q=chicken&app_id=7e529349&app_key=5ec5a18b5cb7ccc6b8c6f926f59dada0"
+
+app id -->7e529349
+key -->5ec5a18b5cb7ccc6b8c6f926f59dada0

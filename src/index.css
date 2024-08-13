@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top-nabvar{
+    width: 100%;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+.top-nabvar img{
+    margin-left: 90vh;
+    width: 170px;
+    height: 20vh;
+}
+.other-links{
+    margin-right: 33px;
+    display: flex;
+    gap: 10px;
+}
+#btn-login{
+    width: 100px;
+    border: 2px solid #1c1c50;
+    color: #1c1c50;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 5vh;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn-login a{
+    text-decoration: none;
+    color: #1c1c50;
+    transition: 0.5s ease;
+
+}
+
+
+#btn-login:hover a{
+    color: white;
+}
+#btn-login:hover {
+    background-color: #222222;
+    color: white;
+}
+#btn-signup{
+    width: 100px;
+    border: 2px solid #1c1c50;
+    color: #1c1c50;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 5vh;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn-signup a{
+    text-decoration: none;
+    color: #1c1c50;
+    transition: 0.5s ease;
+
+}
+#btn-signup:hover a{
+    color: white;
+}
+#btn-signup:hover {
+    background-color: #222222;
+    color: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.carousel-inner{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carousel-item img{
+    width: 100vw;
+    height: 110vh;
+    
+}
+.nv{
+    background-color: #222222;
+    width: 100%;  
+}
+.ulnav{
+    margin-left: 100px;
+    gap: 50px;
+    font-weight: 700;
+    font-family: 'Noto Serif', serif;
+    font-size: 16px;
+    
+}
+.i{
+    color: #fff;
+    font-size: 20px;
+}
+.recipesPages{
+    width: 1150px;
+    height: 400px;
+    background-color: #fff;
+    /* border: 1px solid black; */
+    border-radius: 1%;
+    position: fixed;
+    display: flex;
+    gap: 15px;
+    z-index: 998;
+    font-weight: 700;
+    font-family: 'Noto Serif', serif;
+    font-size: 16px;
+    display: none;
+  
+}
+
+.container1{
+    width: 40%;
+    height: 90%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0 10px 30px;
+
+ 
+}
+.link{
+  color: black;
+  text-decoration: none; 
+  padding-bottom: 20px;
+  border-bottom: 1px solid black; 
+}
+.container2{
+    padding: 20px 30px 20px 0 ;
+}
+.container3{
+    padding: 20px 0 20px 0;
+}
+.nav-item:hover .recipesPages{
+    display: flex !important; 
+}
+
+.slideImg{
+    width: 100%;
+    height: 130vh;
+    
+}
+
