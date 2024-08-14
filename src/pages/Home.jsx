@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import axios from 'axios';
 import {Link} from "react-router-dom"
 
-const Home = () => {
+const Home = (props) => {
 
     const [items,setItems] = useState([]);
     const [item,setitem] = useState("cake")
@@ -32,6 +32,10 @@ const Home = () => {
      let input=inputRef.current.value 
      setitem(input)
      inputRef.current.value =""
+    }
+
+    const handleClick=(obj)=>{
+        props.getData(obj)
     }
     
   return (
@@ -80,12 +84,14 @@ const Home = () => {
 {
  items.map((ele)=>{
    return(
-      <div className="card" style={{width: '18rem'}}>
+      <div className="card" key={ele.id} style={{width: '18rem'}}>
 <img src={ele.recipe.image} className="card-img-top" alt="..." />
 <div className="card-body">
 <h5 className="card-title text-truncate">{ele.recipe.label}</h5>
 {/* <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */}
-<Link to="/single" state={ele}   className="btn btn-primary">view recipe</Link>
+<Link to="/single" state={ele}   className="btn btn-warning">view recipe</Link>
+<Link className='btn btn-success ms-3' onClick={()=>{handleClick(ele)}}>Add Cart</Link>
+
 </div>
 </div>
 

@@ -13,9 +13,31 @@
     
 }
 .top-nabvar img{
-    margin-left: 90vh;
     width: 170px;
     height: 20vh;
+}
+.searchBar{
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+.searchBar input{
+    width: 450px;
+    padding: 6px;
+    font-size: 19px;
+    background-color: #e7e7e7;
+    border-radius: 6px;
+    border: none;
+}
+.searchBar input:hover{
+    border: 1px solid black;
+}
+.searchBar button{
+    width: 90px;
+    background-color: #222222;
+    color: white;
+    border: none;
+    border-radius: 6px;
 }
 .other-links{
     margin-right: 33px;

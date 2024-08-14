@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -8,7 +9,12 @@ const Navbar = () => {
      <div className="top-nabvar">
       
       <img src="https://thumbs.dreamstime.com/b/recipe-book-calligraphy-cover-vector-illustration-emblem-label-print-chef-kitchen-hat-trendy-stylish-typography-inscription-166113287.jpg" alt="" />
-      
+
+     <div className="searchBar">
+      <input type="text" placeholder="Search" />
+      <button>Search</button>
+     </div>
+
       <div class="other-links">
         <button id="btn-login"><a href="">Login</a></button>
         <button id="btn-signup"><a href="">Sign Up</a></button>
@@ -16,7 +22,7 @@ const Navbar = () => {
     </div>
     <nav className="navbar navbar-expand-lg navbar-dark nv p-3" >
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Navbar</a>
+    <Link className="navbar-brand" to="/">Navbar</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" />
     </button>
@@ -49,7 +55,7 @@ const Navbar = () => {
           </div>
         </li>
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/">Cart</Link>
+          <Link className="nav-link active" aria-current="page" to="/cart">Cart</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link active" aria-current="page" to="/">Contact Us</Link>

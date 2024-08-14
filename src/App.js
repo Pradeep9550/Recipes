@@ -7,16 +7,28 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Single from "./pages/Single";
 import PageNotFound from "./pages/PageNotFound";
+import Cart from "./pages/Cart";
+import { useState } from "react";
 
 
-function App() {
+
+function App(props) {
+const [cartarr,setCartArr] = useState([])
+console.log(cartarr)
+
+  const getData=(ans)=>{
+    console.log(ans)
+    setCartArr(ans)
+  }
+
   return (
     <div className="App">
     <BrowserRouter>
     <Navbar/>
       <Routes>
-        <Route path="/" element={<Home/>}/>
+        <Route path="/" element={<Home getData={getData}/>}/>
         <Route path="/single" element={<Single/>}/>
+        <Route path="/cart" element={<Cart/>}/>
         <Route path="/*"  element={<PageNotFound/>}/>
       </Routes>
     </BrowserRouter>
